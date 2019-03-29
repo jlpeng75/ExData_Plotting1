@@ -15,7 +15,7 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 dat1 <- data %>%
     filter(Date >= as.Date("2007-02-01") & date <= as.Date("2007-02-02"))
 # plot histogram for Global_Active_Power
-png("plot1.png")
+png("plot1.png", width = 480, width = 480)
 hist(dat1$Global_active_power, col = 'red',
      main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off()

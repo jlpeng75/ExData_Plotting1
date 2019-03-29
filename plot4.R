@@ -17,7 +17,7 @@ dat1 <- data %>%
     filter(Date >= as.Date("2007-02-01") & Date <= as.Date("2007-02-02")) %>%
     mutate(DayOfWeek = weekdays(Date, abbreviate = T ))
 # plot histogram for Global_Active_Power
-png("plot4.png")
+png("plot4.png", width = 480, width = 480)
 par(mfrow = c(2,2))
 
 with(dat1, plot(DateTime, Global_active_power, type = "l", 
